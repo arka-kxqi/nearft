@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-color: #030205;
+  color: #8480ae;
+}
+
+
+
+@layer components {
+  .yellow-button {
+    @apply rounded-full shadow-md bg-yellow px-3 py-2 text-black
+  }
+
+  .blue-button {
+    @apply rounded-full bg-blue px-5 py-3 text-white hover:bg-hover-blue border border-blue
+  }
+
+  .card-button {
+    @apply rounded-full bg-hover-blue px-5 py-2 text-white
+  }
+
+  .transparent-button {
+    @apply rounded-full px-5 py-3 text-white hover:text-hover-blue
+  }
+
+  .input-border{
+    @apply block rounded-lg bg-input-bg border-2 h-12 text-white2 p-2 border-input-border focus:text-white2 focus:border focus:border-[rgba(194,212,248,.4)] focus:outline-none
+  }
+}
